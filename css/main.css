@@ -1,0 +1,315 @@
+/* 
+
+mustard:  #FFC43D;
+
+
+*/
+
+@font-face {
+  font-family: "test";
+  src: url("../fonts/Trochut-Bold.ttf");
+}
+@font-face {
+  font-family: "playfair-normal";
+  src: url("../fonts/PlayfairDisplaySC-Black.ttf");
+}
+
+@font-face {
+  font-family:  "oswald";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf");
+}
+
+body{
+	
+  text-align: center;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+h1{
+  font-family: "test";
+  font-size: 200px;
+  color:  white;
+  padding-top: 30vh;
+}
+h2 {
+  
+  font-family: "playfair-normal";
+  font-size: 100px;
+  color:  #FFC43D;
+  
+}
+h3 {
+  text-align:  left;
+  font-family: "playfair-normal";
+  font-size: 50px;
+  color:  #586BA4;
+
+
+}
+h4 {
+  color: #839073;
+  font-size: 100px;
+  font-family: oswald;
+}
+p {
+  text-align: left;
+  font-size:  17px;
+  margin: 0;
+  text-indent: 75px;
+}
+
+.kyle {
+  text-indent: 0px;
+}
+.alex {
+  text-indent: 0px;
+  margin: 10px;
+}
+
+.computer {
+  text-indent: 0px;
+  color: white;
+  margin: 10px;
+  vertical-align: center;
+}
+
+.luna {
+  padding-left: 60px;
+}
+
+#echo {
+  width: 90%;  
+  padding-top: 10%;
+  align-self: right;
+}
+
+.poem {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.temp {
+  height: 97vh;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-image: url("../images/background.png");
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+.site-footer {
+  background: #FFC43D;
+}
+
+.site-footer p{
+  text-align: center;
+  padding-top: 2%;
+}
+
+#top, #bottom, #left, #right {
+  background: #FFC43D;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+button {
+  border:  0;
+  background: white;
+}
+
+.r-column {
+  float:  right;
+  width: 50%;
+  align-content: center;
+}
+
+.column:hover img{
+  opacity:  0.8;
+}
+
+.arrow {
+  width:  90px;
+}
+
+/*.arrow:hover {
+  width:  100px;
+}*/
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+.piece {
+  padding-top: 10%;
+  height: 1000px;
+}
+
+.gallery {
+  padding-top:  200px;
+  padding-bottom:  500px;
+  padding-left: 120px;
+  padding-right: 50px;
+  overflow: visible;
+
+}
+
+.button1 {
+  height:  50px;
+  width:  50px;
+  border:  none;
+  ;
+  position: relative;
+}
+
+.button1:hover {
+  height: 60px;
+  width:  60px;
+}
+
+/* 
+CHANGING BUTTON
+https://css-tricks.com/styling-based-on-scroll-position/ */
+
+
+.button-bar {
+  display:  block;
+  float: left;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 50px;
+  width:  50px;
+  padding-left: 20px;
+  padding-top:  50px;
+}
+
+.heavy-cloud-top {
+  display:  block;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 5px;
+}
+.heavy-cloud-bottom {
+  display:  block;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 380px;
+}
+
+.outer-frame {
+  overflow:  visible;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 50px;
+}
+
+.inner {
+  padding-top: 100px;
+  width:  800px;
+  padding-right: 89px;
+}
+
+.outer {
+  width: 1000px;
+}
+
+.cloud-mid {
+  width:  25%;
+  padding: 20px;
+}
+
+.cloud-left {
+  width:  25%;
+  padding: 20px;
+  margin-left: 90px;
+  float: left;
+}
+
+.cloud-right {
+  width:  25%;
+  padding: 20px;
+  float: right;
+  margin-right: 100px;
+}
+
+#forest-back {
+  background-color: #1B3022;
+  height: 6000px;
+}
+
+
+
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  content-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  /*background-color: #ccc;*/
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 70%;
+} 
+
+.untitled {
+  width: 70%;
+}
+
