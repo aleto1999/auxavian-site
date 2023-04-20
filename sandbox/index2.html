@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-wrapper {
+      width: 40%;
+    }
+
+    .swiper-slide {
+      height: 100%;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      overflow: auto;
+
+    }
+
+    .slide-content {
+      height: auto; 
+      width: 45%;
+      overflow-y: scroll;
+      background-color: blue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <p><br>A half&#45;eaten moon <br>is still a warmed celestial speck<br>amongst marred and violet clouds.</p>
+					<p><br>Despite its distance&#44;<br>its visibility reminds my tongue<br>of the half&#45;eaten cake in the kitchen.</p>
+					<p><br>I&#39;ll return to do it when I can&#44;<br>but first I have a job,<br>a role to play.</p>
+					<p><br>I&#39;m outside Jenny&#39;s truck,<br>looking for a container<br>I have to empty.</p>
+					<p><br>In the backseat<br>under some blankets,<br>I see the glinting blue jug.</p>
+					<p><br>Upon tugging it towards me,<br>my forearms feel its weight,<br>more cumbersome than expected.</p>
+					<p><br>Moving around the garden,<br>pretending it to be gasoline,<br>I, the rebellious, live in a scorched land.</p>
+					<p><br>I laugh at the fragility of the orchids,<br>dousing their stems and inundating them <br>until their small soft hairs are severed and submerged.</p>
+					<p><br>I mock the thin&#45;skinned marrows, <br>swerving and stomping through <br>overgrown, overprotective leaves.</p>
+					<p><br>I strike a match against naked air<br>and flick its flames into the field<br>just before coming back in, still hungry.</p>
+      
+        </div>
+        <div class="slide-content">
+          <p><br>A half&#45;eaten moon <br>is still a warmed celestial speck<br>amongst marred and violet clouds.</p>
+					<p><br>Despite its distance&#44;<br>its visibility reminds my tongue<br>of the half&#45;eaten cake in the kitchen.</p>
+					<p><br>I&#39;ll return to do it when I can&#44;<br>but first I have a job,<br>a role to play.</p>
+					<p><br>I&#39;m outside Jenny&#39;s truck,<br>looking for a container<br>I have to empty.</p>
+					<p><br>In the backseat<br>under some blankets,<br>I see the glinting blue jug.</p>
+					<p><br>Upon tugging it towards me,<br>my forearms feel its weight,<br>more cumbersome than expected.</p>
+					<p><br>Moving around the garden,<br>pretending it to be gasoline,<br>I, the rebellious, live in a scorched land.</p>
+					<p><br>I laugh at the fragility of the orchids,<br>dousing their stems and inundating them <br>until their small soft hairs are severed and submerged.</p>
+					<p><br>I mock the thin&#45;skinned marrows, <br>swerving and stomping through <br>overgrown, overprotective leaves.</p>
+					<p><br>I strike a match against naked air<br>and flick its flames into the field<br>just before coming back in, still hungry.</p>
+      
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"><ion-icon name="arrow-forward-sharp"></ion-icon></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Include plugin after Swiper -->
+  <script>
+    /* ========
+Debugger plugin, simple demo plugin to console.log some of callbacks
+======== */
+    function myPlugin({ swiper, extendParams, on }) {
+      extendParams({
+        debugger: false,
+      });
+
+      on('init', () => {
+        if (!swiper.params.debugger) return;
+        console.log('init');
+      });
+      on('click', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('click');
+      });
+      on('tap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('tap');
+      });
+      on('doubleTap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('doubleTap');
+      });
+      on('sliderMove', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('sliderMove');
+      });
+      on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+          'slideChange',
+          swiper.previousIndex,
+          '->',
+          swiper.activeIndex
+        );
+      });
+      on('slideChangeTransitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionStart');
+      });
+      on('slideChangeTransitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionEnd');
+      });
+      on('transitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionStart');
+      });
+      on('transitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionEnd');
+      });
+      on('fromEdge', () => {
+        if (!swiper.params.debugger) return;
+        console.log('fromEdge');
+      });
+      on('reachBeginning', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachBeginning');
+      });
+      on('reachEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachEnd');
+      });
+    }
+  </script>
+
+  <script>
+    // Init Swiper
+    var swiper = new Swiper('.swiper', {
+      // Install Plugin To Swiper
+      modules: [myPlugin],
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
+    });
+  </script>
+</body>
+
+</html>
