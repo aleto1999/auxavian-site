@@ -17,6 +17,7 @@ const cover0 = ( c ) => {
 
     let curr_color = c.color('#FFC43D');
     c.background(curr_color);
+    // c.clear();
 
     c.fill('white');
     c.textSize(c.width/6);
