@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background-color: #eee; 
+    background-color: #8C0303; 
     font-family: "Monument Extended";
     font-size: 14px; 
     color: #000; 
@@ -31,7 +31,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    color: #8C0303;
+    color: inherit;
     
 }
 
