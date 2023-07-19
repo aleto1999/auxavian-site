@@ -261,7 +261,9 @@ body {
 .title {
   
     /* padding-top: 10em; */
-    height: 30vh;
+    width:100%;
+
+    min-height: 30vh;
     padding: 0, 5vw, 0, 5vw;
 
     display: flex;
@@ -306,14 +308,15 @@ body {
 
 }
 
-/* .poetry {
-   white-space: nowrap; 
+.poetry {
+  
+   padding-left: 4em;
   
   
-} */
+}
 
 .poetry p {
-  text-indent: 30px
+  text-indent: -2em;
 }
 
 .poetry p::first-line {
@@ -478,6 +481,7 @@ ion-icon {
   }
 
   .title {
+    width:50%;
     position:sticky;
     top: 0; 
     padding-top: 0;
