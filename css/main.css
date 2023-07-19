@@ -252,6 +252,7 @@ body {
     color: inherit;
     flex-wrap: wrap;
     overflow-x: hidden;
+    padding-bottom: 20vh;
 }
 
 .column {
@@ -540,6 +541,7 @@ ion-icon {
     overflow: auto;
     flex-wrap: nowrap;
     height:95%;
+    padding-bottom:0;
   }
   .visual-landscape {
     padding: 0px;
