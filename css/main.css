@@ -44,11 +44,7 @@ body {
 .nav-side {
     height: 10%; 
     width: 100vw; 
-    /* top:0;
-    left:0; 
-    position:sticky;
-    z-index:100;
-    background-color:inherit; */
+
 }
 
 .nav-items {
@@ -71,7 +67,7 @@ body {
 }
 
 .no-mobile {
-  visibility:hidden;
+  display: none;
 }
 
 
@@ -520,7 +516,7 @@ ion-icon {
   }
 
   .no-mobile {
-    visibility:visible;
+    display: flex;
   }
 
   .swiper {
