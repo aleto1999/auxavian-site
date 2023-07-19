@@ -32,6 +32,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     color: inherit;
+    background-color: inherit;
     
 }
 
@@ -43,6 +44,11 @@ body {
 .nav-side {
     height: 10%; 
     width: 100vw; 
+    /* top:0;
+    left:0; 
+    position:sticky;
+    z-index:100;
+    background-color:inherit; */
 }
 
 .nav-items {
@@ -226,8 +232,8 @@ body {
 .swiper {
 
     width: 100%; 
-    /* height: 95%;  */
-    min-height: 100vh;
+    height: 100vh; 
+    /* min-height: 100vh; */
     color: inherit;
 
 }
@@ -505,6 +511,7 @@ ion-icon {
   .nav-side {
     width: 5%; 
     height: 90vh; 
+    
   }
 
   .menu-slider {
@@ -532,6 +539,7 @@ ion-icon {
   .swiper-slide {
     overflow: auto;
     flex-wrap: nowrap;
+    height:95%;
   }
   .visual-landscape {
     padding: 0px;
