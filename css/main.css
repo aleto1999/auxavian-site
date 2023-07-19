@@ -469,6 +469,10 @@ ion-icon {
 
 @media (min-width: 900px) {
 
+  .swiper-pagination{
+    top:auto;
+  }
+
   .column {
     width:50%;
     height: 100%;
