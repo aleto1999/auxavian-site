@@ -32,6 +32,7 @@
                                 <li class="blue" onclick="ChangeSection(3);"><h1>Provenance</h1></li> 
                                 <li class="black" onclick="ChangeSection(4);"><h1>Rara Avis</h1></li>
                                 <li class="bblue" onclick="ChangeSection(5);"><h1>Mise en Abime</h1></li>
+                                <!-- <li class="contributor" onclick="ChangeSection(6);"><h1>Contributors</h1></li> -->
 						    </label>
 						</div>
 	
@@ -849,7 +850,7 @@
                 </div>
                 <div class="swiper-slide slide_2">
                     <div class="column title" style="text-align: right;">
-                        <h1>Heavy Cloud</h1>
+                        <h1>Heavy Clouds</h1>
                         <h2>Diego Blanco</h2>
                     </div>
                     <div class="column visual visual-portrait" style="scroll-snap-type: y mandatory;overflow-y: scroll;">
@@ -993,16 +994,23 @@
 
     // initialize swiper to fever dream section
     let swiper = new Swiper(".fDSwiper", {
-        navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
-        }, pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        }, keyboard: {
-            enabled: true,
-        }, 
+        simulateTouch: true, 
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            }, pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            }, keyboard: {
+                enabled: true,
+            },
+            breakpoints: {
+                900:{
+                    simulateTouch: false
+
+                }
+            }, 
       
     });
 
@@ -1027,6 +1035,7 @@
         let newSwiperName = "." + sectionIDs[n] + "Swiper";
         console.log(newSwiperName);
         swiper = new Swiper(newSwiperName, {
+            simulateTouch: true, 
             navigation: {
                 nextEl: ".button-next",
                 prevEl: ".button-prev",
@@ -1036,7 +1045,14 @@
                 clickable: true,
             }, keyboard: {
                 enabled: true,
-            }, 
+            },
+            breakpoints: {
+                900:{
+                    simulateTouch: false
+
+                }
+            }
+            
         });
 
         // set only current section to visible

@@ -168,6 +168,12 @@ body {
     color: #B8E2F2;
     -webkit-text-stroke: 1px #B8E2F2;
   }
+
+  .contributor:hover{
+    color:#FFC43D;
+    -webkit-text-stroke: 1px #FFC43D;
+
+  }
   
   input[type="checkbox"] {
     display: none;

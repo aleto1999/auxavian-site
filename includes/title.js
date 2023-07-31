@@ -15,7 +15,7 @@ const cover0 = ( c ) => {
 
   c.draw = function(){
 
-    let curr_color = c.color('#FFC43D');
+    let curr_color = c.color("#FBEC5D");
     c.background(curr_color);
     // c.clear();
 
