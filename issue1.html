@@ -26,13 +26,14 @@
 					<div class="menu-slider">
 						<div class="menu-content">
 							<label for="myInput">
-                                <li class="red" onclick="ChangeSection(0);"><h1>Fever Dream</h1></li>
-                                <li class="orange" onclick="ChangeSection(1);"><h1>Ego Trip</h1></li>
-                                <li class="pink" onclick="ChangeSection(2);"><h1>Tabula Rasa</h1></li>
-                                <li class="blue" onclick="ChangeSection(3);"><h1>Provenance</h1></li> 
-                                <li class="black" onclick="ChangeSection(4);"><h1>Rara Avis</h1></li>
-                                <li class="bblue" onclick="ChangeSection(5);"><h1>Mise en Abime</h1></li>
-                                <!-- <li class="contributor" onclick="ChangeSection(6);"><h1>Contributors</h1></li> -->
+                                <li class="contributor" style="font-size: 18pt;" onclick="ChangeSection(0);"><h1>Letter from the Editors</h1></li>
+                                <li class="red" onclick="ChangeSection(1);"><h1>Fever Dream</h1></li>
+                                <li class="orange" onclick="ChangeSection(2);"><h1>Ego Trip</h1></li>
+                                <li class="pink" onclick="ChangeSection(3);"><h1>Tabula Rasa</h1></li>
+                                <li class="blue" onclick="ChangeSection(4);"><h1>Provenance</h1></li> 
+                                <li class="black" onclick="ChangeSection(5);"><h1>Rara Avis</h1></li>
+                                <li class="bblue" onclick="ChangeSection(6);"><h1>Mise en Abime</h1></li>
+                                <li class="contributor" style="font-size: 18pt;" onclick="ChangeSection(7);"><h1>Contributors</h1></li>
 						    </label>
 						</div>
 	
@@ -47,10 +48,14 @@
             <span>&times;</span> 
             <img src="images/nightswim.jpg">
         </div>
+
+        <div class="swiper fDSwiper" id="lFE" >
+
+        </div>
         
         
 
-        <div class="swiper fDSwiper" id="fD">
+        <div class="swiper fDSwiper" id="fD" style="display: none;">
             
             <div class="swiper-wrapper">
 
@@ -853,7 +858,7 @@
                         <h1>Heavy Clouds</h1>
                         <h2>Diego Blanco</h2>
                     </div>
-                    <div class="column visual visual-portrait" style="scroll-snap-type: y mandatory;overflow-y: scroll;">
+                    <div class="column visual visual-portrait" style="scroll-snap-type: y mandatory; overflow-y: scroll;">
                         <img src="images/heavy_cloud_1.jpeg" style="float:right;"/>
                         <img src="images/heavy_cloud_2.jpeg" style="float:right;"/>
                         <img src="images/heavy_cloud_3.jpeg" style="float:right;"/>
@@ -963,6 +968,28 @@
             </div>   
             
         </div>
+        
+        <div class="swiper cSwiper" id="c" style="display: none;">
+            <div class="swiper-slide slide_1">
+                Kevin Berstler
+                Diego Blanco
+                Lincoln Carr
+                S.Y. Chen
+                Shane Cranor
+                Vy Duong
+                Name
+                Lisa Gay
+                Colton Kohnke
+                Ryan Lucy
+                Jonathan Marquez
+                Jade Njo
+                Mikaele Porter
+                terrspace
+                Zack Wilkins
+                Mohammed Mudhafar Abduljabbar
+
+            </div>
+        </div>
 
         
   
@@ -1016,8 +1043,8 @@
 
     
 
-    let sectionIDs = ["fD", "eT", "tR", "p", "rA", "mA"];
-    let sectionColors = [ "#8C0303", "#D95204", "#F2A7CA", "#4A4EBC", "#010100", "#B8E2F2"];
+    let sectionIDs = ["lFE", "fD", "eT", "tR", "p", "rA", "mA", "c"];
+    let sectionColors = [ "black", "#8C0303", "#D95204", "#F2A7CA", "#4A4EBC", "#010100", "#B8E2F2", "#FBEC5D"];
     let sections = [];
     for (id of sectionIDs) {
         sections.push(document.getElementById(id)); 
