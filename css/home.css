@@ -1,6 +1,5 @@
 html,
 body {
-  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -19,21 +18,14 @@ section {
   height: 100vh;
   position: relative;
   scroll-snap-align: start;
+  overflow-y: hidden;
 }
 
 .staff {
-  width:100vw;
-  height:100vh;
+
   background-image: none;
   background-color: #FF7BAC;
   background-size:  auto 100vh;
-}
-
-.content {
-  padding: 10%;
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 
@@ -50,62 +42,16 @@ h2 {
   font-size: 3vh;
 }
 
-.menu {
-  width:50%;
-}
-
-.button {
-  border-radius: 4px;
-  background-color: #8C0303;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px;
-  width: 175px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 a {
   text-decoration: none;
   color: black;
-
   font-family: "neue-kabel", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 5vh;
-
   display:block;
   
 }
-
 
 .link-arrow p {
   font-size: 5vh;
@@ -123,12 +69,12 @@ a {
   padding-top: 10vh; 
 }
 
-.img-container {
-  overflow: hidden; 
+#contact {
+  height:100vh; 
 }
 
-#contact {
-  padding: 10vw;
+#contact h2 {
+  padding:10vw;
 }
 
 
