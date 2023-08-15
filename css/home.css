@@ -1,32 +1,30 @@
 html,
 body {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
 body {
-    margin: 0; 
-    padding: 0; 
-}
-
-.parent {
+  margin: 0; 
+  padding: 0; 
   overflow-y: scroll;
   overflow-x:hidden;
   height: 100vh;
-  /* scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
+
+
 
 section {
   height: 100vh;
-  /* scroll-snap-align: start; */
   position: relative;
+  scroll-snap-align: start;
 }
 
 .staff {
   width:100vw;
   height:100vh;
-  background-image: url("../images/auxavian_staff_lawnmower.jpg");
+  background-image: none;
   background-color: #FF7BAC;
   background-size:  auto 100vh;
 }
@@ -36,14 +34,6 @@ section {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-}
-
-.three {
-
-}
-
-.four {
-
 }
 
 
@@ -142,21 +132,15 @@ a {
 }
 
 
-/* img {
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-img:hover {
-  
-  transform: scale(1.05);
-  transform-origin: center;
-} */
-
 @media (min-width: 900px) {
 
   .content {
     overflow: auto;
     flex-wrap: nowrap;
+  }
+
+  .staff {
+    background-image: url("../images/auxavian_staff_lawnmower.jpg");
   }
 
 }
