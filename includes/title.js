@@ -57,4 +57,4 @@ const cover0 = ( c ) => {
 
 };
 
-let coverP5_0 = new p5(cover0, 'title');
+let coverP5_0 = new p5(cover0, 'desktop-title');

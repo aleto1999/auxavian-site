@@ -10,6 +10,7 @@ body {
   overflow-x:hidden;
   height: 100vh;
   scroll-snap-type: y mandatory;
+  background-color: #FAF9F6;
 }
 
 
@@ -20,6 +21,18 @@ section {
   scroll-snap-align: start;
   overflow-y: hidden;
 }
+
+#desktop-title {
+  display: none;
+  /* height:0; */
+}
+
+.mobile-title {
+  display: inherit;
+  background-color: #FBEC5D;
+  color: #FAF9F6;
+}
+
 
 .staff {
 
@@ -79,6 +92,16 @@ a {
 
 
 @media (min-width: 900px) {
+
+  #desktop-title {
+    display: inherit;
+  }
+
+  .mobile-title {
+    display: none;
+    /* height:0; */
+  }
+
 
   .content {
     overflow: auto;
