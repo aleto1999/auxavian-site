@@ -972,23 +972,43 @@
         </div>
         
         <div class="swiper cSwiper" id="c" style="display: none;">
-            <div class="swiper-slide slide_1">
-                Kevin Berstler
-                Diego Blanco
-                Lincoln Carr
-                S.Y. Chen
-                Shane Cranor
-                Vy Duong
-                Name
-                Lisa Gay
-                Colton Kohnke
-                Ryan Lucy
-                Jonathan Marquez
-                Jade Njo
-                Mikaele Porter
-                terrspace
-                Zack Wilkins
-                Mohammed Mudhafar Abduljabbar
+            <div class="swiper-slide">
+                <div class="column">
+                    <div class="center">
+                        <div class="contributor-hover" id="leto" >
+                            <img src="images/contributor-tiles/1.jpg">
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="column contributor-list">
+                    <h1>Kevin Berstler</h1>
+                    <h1>Diego Blanco</h1>
+                    <h1>Lincoln Carr</h1>
+                    <h1>S.Y. Chen</h1>
+                    <h1>Shane Cranor</h1>
+                    <h1>Wenli Dickinson</h1>
+                    <h1>Vy Duong</h1>
+                    <h1>Lisa Gay</h1>
+                    <h1>Colton Kohnke</h1>
+                    <div onmouseover="contributorBioShow('leto')" onmouseout="contributorBioHide('leto')">
+                        <h1>Alex Leto</h1>
+                    </div>
+                    <h1>Ryan Lucy</h1>
+                    <h1>Kyle Markowski</h1>
+                    <h1>Jonathan Marquez</h1>
+                    <h1>Jade Njo</h1>
+                    <h1>Mikaele Porter</h1>
+                    <h1>terrspace</h1>
+                    <h1>Connor Weddle</h1>
+                    <h1>John Whatley</h1>
+                    <h1>Zack Wilkins</h1>
+                    <h1>Mohammed Mudhafar Abduljabbar</h1>
+                </div>
+                
 
             </div>
         </div>
@@ -1111,6 +1131,18 @@
     document.querySelector(".popup-image span").onclick = () => {
         document.querySelector('.popup-image').style.display = 'none';
     };
+
+    function contributorBioShow(name) {
+
+        document.getElementById(name).style.display = 'inherit';
+
+    }
+
+    function contributorBioHide(name) {
+
+        document.getElementById(name).style.display = 'none';
+
+    }   
 
 
 
