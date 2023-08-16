@@ -132,11 +132,11 @@ body {
   }
 
   .section-title {
-    font-size: 18pt;
+    font-size: 14pt;
   }
 
   .contributor {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 
   .menu-content li:hover {
@@ -382,7 +382,15 @@ body {
 }
 
 
+.mASwiper > .swiper-wrapper > .swiper-slide {
+  background-color: black;
+    
+  
+}
 
+.mASwiper > .swiper-wrapper > .swiper-slide p {
+  color: white;
+}
 
 
 .button-next{
