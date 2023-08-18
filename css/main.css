@@ -39,6 +39,7 @@ body {
 
 .nav {
     color: white;
+    
 
 }
 
@@ -105,8 +106,8 @@ body {
   }
   
   .menu-content {
-    margin-top: 150px;
-    padding: 0 50px;
+    margin-top: 5vh;
+    margin-left:5vw;
     position: relative;
     color: white;
     text-align: left;
@@ -291,7 +292,7 @@ body {
     
 }
 
-.center {
+.column-center {
   border: 5px solid;
   position: absolute;
   top: 50%;
@@ -299,6 +300,13 @@ body {
   transform: translate(-25%, -50%);
   padding: 10px;
   text-align: center;
+
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 10px;
 
 }
 
@@ -309,8 +317,7 @@ body {
 }
 
 .visual-portrait img {
-    scroll-snap-align: start;
-    
+    scroll-snap-align: start;   
     width: 100%;
     height: auto;
 
@@ -397,6 +404,16 @@ body {
   color: white;
 }
 
+.nav-button {
+  width:100%; 
+  overflow:hidden;
+}
+
+.nav-button:hover .icon {
+  
+  transform: scale(1.3);
+  transform-origin: center;
+}
 
 .button-next{
 
@@ -408,6 +425,8 @@ body {
     
 }
 
+
+
 .button-prev {
 
     cursor: pointer;
@@ -418,14 +437,12 @@ body {
 
 }
 
-.button-prev:hover {  
-  transform: scale(2);
-  transform-origin: center;
-}
+
 
 ion-icon {
     font-size: 24px;
 }
+
 
 
 .swiper-pagination{
@@ -501,7 +518,6 @@ ion-icon {
 .contributor-hover {
   height:50%;
   width:100%;
-  /* background: rgba(0, 0, 0, 0.2); */
   padding:10px;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -605,11 +621,13 @@ ion-icon {
 
   }
 
-  .visual-portrait img {
+  .visual-portrait img, video {
     
     height: 100%;
     width: auto;
+
   }
+  
   .popup-image img{
     width: 900px; 
   }

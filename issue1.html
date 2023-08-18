@@ -18,13 +18,17 @@
             <div class="nav-items">
 				<input type="checkbox" id="myInput">
 				<label for="myInput">
-					<span class="menu-bar top"></span>
-					<span class="menu-bar middle"></span>
-					<span class="menu-bar bottom"></span>
+                    <div class="icon">
+                        <span class="menu-bar top"></span>
+					    <span class="menu-bar middle"></span>
+					    <span class="menu-bar bottom"></span>
+                    </div>
+					
 				</label>
 				<aside>
 					<div class="menu-slider">
-						<div class="menu-content">
+						<div class="menu-content vertical-center">
+                        
 							<label for="myInput">
                                 <li class="contributor" onclick="ChangeSection(0);"><h1>Letter from the Editors</h1></li>
                                 <li class="section-title red" onclick="ChangeSection(1);"><h1>Fever Dream</h1></li>
@@ -452,7 +456,7 @@
                     <div class="column title">
                         <h1>Inviting ourselves to our wedding</h1>
                         <h2>Lisa Gay</h2>
-                        <img class="no-mobile" src="images/titles/gingham_shell.png" style="width: 60%;"></img>
+                        <img class="no-mobile" src="images/titles/gingham_shell.jpg" style="width: 60%;"></img>
     
                     </div>
                     <div class="column poetry">
@@ -851,7 +855,10 @@
                     </div>
 
                     <div class="column visual visual-portrait">
-                        <source src="images/Flux Lunaris.mp4" type="video/mp4">
+                        <video controls>
+                            <source src="images/Flux Lunaris.mp4" type="video/mp4">
+                        </video>
+                       
                     </div>
 
                 </div>
@@ -974,7 +981,7 @@
         <div class="swiper cSwiper" id="c" style="display: none;">
             <div class="swiper-slide">
                 <div class="column">
-                    <div class="center">
+                    <div class="column-center">
                         <div class="contributor-hover" id="leto" >
                             <img src="images/contributor-tiles/1.jpg">
                         </div>
@@ -1018,12 +1025,12 @@
         <div class="nav-side nav no-mobile">
             <div style="height:90%"></div>
 
-            <div class="button-next">
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
+            <div class="nav-button button-next">
+                <ion-icon class="icon" name="arrow-forward-sharp"></ion-icon>
             </div>
 
-            <div class="button-prev">
-                <ion-icon name="arrow-back-sharp"></ion-icon>
+            <div class="nav-button button-prev">
+                <ion-icon class="icon" name="arrow-back-sharp"></ion-icon>
             </div>
  
 
