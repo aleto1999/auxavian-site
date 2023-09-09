@@ -68,8 +68,12 @@ body {
   padding-right: 50vh; 
 }
 
-.no-mobile {
+.desktop {
   display: none;
+}
+
+.mobile {
+  display:block;
 }
 
 
@@ -296,11 +300,11 @@ body {
   background-image: url('../images/titles/korea_tarot_1.jpg');
 }
 
-#geo-title {
+/* #geo-title { */
   /* background-image: url('../images/titles/geo_birth.jpeg'); */
   /* background-position: center; */
   /* background-size: cover; */
-}
+/* } */
 
 .column-center {
   border: 5px solid;
@@ -480,6 +484,10 @@ ion-icon {
   text-indent: 40pt;
 }
 
+.luna-mobile {
+  text-align: right;
+}
+
 
 
 
@@ -590,7 +598,11 @@ ion-icon {
     width: 100%;
   }
 
-  .no-mobile {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
     display: block;
   }
 

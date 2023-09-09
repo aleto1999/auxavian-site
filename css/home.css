@@ -20,10 +20,12 @@ section {
   position: relative;
   scroll-snap-align: start;
   overflow-y: hidden;
+  
 }
 
 #desktop-title {
   display: none;
+  overflow-x:hidden;
 
 }
 
