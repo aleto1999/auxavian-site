@@ -534,6 +534,15 @@ ion-icon {
   cursor:pointer;
 }
 
+.contributor-list h1:hover{
+  color: rgb(120,120,120);
+
+}
+
+.contributor-list a {
+  text-decoration: none;
+}
+
 .contributor-hover {
   height:50%;
   width:100%;
