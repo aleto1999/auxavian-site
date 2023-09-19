@@ -296,25 +296,6 @@ body {
     
 }
 
-.ashes-title {
-
-  width:50%;
-  padding:0px;
-  margin:0px;
-  overflow: visible;
-  height: 200vh;
-}
-.ashes-background {
-  
-  background-image: url('../images/titles/korea_tarot_1.jpg');
-  height:100vh;
-  width: 100%;
-  position: -webkit-sticky; /* Safari */
-  position:sticky;
-  top: 0; 
-  padding-top: 0;
-}
-
 
 .column-center {
   border: 5px solid;
@@ -504,6 +485,12 @@ ion-icon {
   text-align: right;
 }
 
+.arabic {
+  direction: rtl;
+  font-family: "brando-arabic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
 
 
@@ -570,6 +557,10 @@ ion-icon {
   width:10vw;
 }
 
+.visual-portrait video {
+  width: 100%;
+  height: 60vh;
+}
 
   
 

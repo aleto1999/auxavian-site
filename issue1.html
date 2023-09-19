@@ -4,6 +4,7 @@
     <title>Issue 1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/dyh8gza.css"/>
     <link rel="stylesheet" href="css/main.css"/>
@@ -127,12 +128,18 @@
                     </div> 
                 </div>
     
-                <div class="swiper-slide">
-                    <div class="ashes-title">
-                        <div class="ashes-background">
+                <div class="swiper-slide" style="position: relative;">
+                    <div class="column" style="height:100%;">
+                        <div class="title" style="width: 100%; background-image: url('images/titles/korea_tarot_1.jpg');">
                             <h1 style="color: white; text-shadow: 1px 1px 1px grey;">Thoughts of Ash and Time</h1>
                             <h2 style="color: white; text-shadow: 1px 1px 1px grey;">S. Y. Chen</h2>
                         </div>
+
+                        <img src="">
+
+
+                        
+                        
                     </div>
                     <div class="column prose">
                         <p><br>&#8195Spits of ash drift past the smoker&#39;s eyelashes, and out over the water, hazing the neon lights of a love hotel&#46; The smoker stubs out his cigarette, though its last regards don&#39;t leave him until a few steps later, as he exhales like a dragon&#46;
@@ -173,6 +180,7 @@
                         <p>&#8195 <i>How long can you hold it in your gaze, as it passes beyond the fringe of a neon light&#63; </i>
                         <br><br>
                     </div>
+                    
                 </div>
                 <div class="swiper-slide">
                     <div class="column title">
@@ -728,12 +736,40 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="column title">
-                        <h1>Untitled Poem</h1>
-                        <h2>Mohammed Mudhafar Abduljabbar<br>with translation assistance from Sabaa Ashakargi</h2>
+                        <div style="text-align: right;">
+                            <h1>Untitled Poem</h1>
+                            <h2>Mohammed Mudhafar Abduljabbar<br>with translation from Sabaa Ashakargi</h2>
+                        </div>
+                        
+                        <div class="arabic">
+                            <br>
+                            <p>اكَانَ القَدَرُ يَلْتَذُ بِآلامِهِ</p>
+                            <p>اَمْ إِنْا وُهِمْنا بِحُبٍ بَاتَ مُحَرّمُ</p>
+                            <br>
+                            <p>لَنْ يَبْيّضَ خَيّطُ الشَمْعِ بَعْدَ حَرْقَتِهِ</p>
+                            <p>فَأِحْزِرْ لَوّنَ قَلْبٍ اَنْتَ حَارِقُهُ</p>
+                            <br>
+                            <p>وَهَلْ يَتوبُ هَوَى عَاشِقٍ بَعْدَ سَحْرَتِهِ</p>
+                            <p>لا لَوّمٌ عَلَيْكَ بَلّ لِفُؤادْيَ العَتَبُ</p>
+                            <br>
+                            <p>حَلى صَبْرُ العَذَارَى ومُرُّ شَقَاءِهِ</p>
+                            <p>كَذْا كَانَ إِنْتِظارُ أحْضَانِكَ النُوَبُ</p>
+                            <br>
+                            <p>دَامَتْ تِلْكَ العُيونُ مُنْيرَةً لِدُرُوبْي</p>
+                            <p>كَمَا دَامَ عِرْاقٌ للعَرَبّي مَنَارُهُ</p>
+                            <br>
+                            <p>لَكِنْ هَلْ لَنْا انْ نَحْصُلَ على مِفْتَاحِنْا</p>
+                            <p>وَفَرَجٌ، بَعْدَ صَبْرٍ شَقَّ لَهُ في حُبِنا فَرَقُ</p>
+                            <br>
+                        </div>
                     </div>
                     <div class="column poetry" style="padding-top:0px; scroll-snap-type: y mandatory; overflow:scroll;">
                         <div class="translation">
                             <br><br><br><br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             <p><i>Mohammed's Version</i></p>
                             <br>
                             <p>Is fate savoring the pain</p>
@@ -922,7 +958,7 @@
                         <h2>Kyle Markowski</h2>
                     </div>
 
-                    <div class="column visual visual-portrait">
+                    <div class="column visual visual-portrait" id="flux-lunaris">
                         <video controls>
                             <source src="images/Flux Lunaris.mp4" type="video/mp4">
                         </video>
@@ -1175,6 +1211,9 @@
                         <div class="contributor-hover" id="cranor" >
                             <img src="images/contributor-tiles/shane.jpg">
                         </div>
+                        <div class="contributor-hover" id="whatley" >
+                            <img src="images/contributor-tiles/whatley.jpg">
+                        </div>
                     </div>
                     
                     
@@ -1182,6 +1221,7 @@
                 </div>
                 <div class="column contributor-list">
                     <h1>Mohammed Mudhafar Abduljabbar</h1>
+                    <h1>Sabaa Ashakargi</h1>
                     <div onmouseover="contributorBioShow('berstler')" onmouseout="contributorBioHide('berstler')">
                         <h1>Kevin Berstler</h1>
                     </div>
@@ -1192,7 +1232,7 @@
                     <div onmouseover="contributorBioShow('chen')" onmouseout="contributorBioHide('chen')">
                         <h1>S.Y. Chen</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('chen')" onmouseout="contributorBioHide('cranor')">
+                    <div onmouseover="contributorBioShow('cranor')" onmouseout="contributorBioHide('cranor')">
                         <h1>Shane Cranor</h1>
                     </div>
                     <div onmouseover="contributorBioShow('dickinson')" onmouseout="contributorBioHide('dickinson')">
@@ -1225,7 +1265,9 @@
                     <h1>Mikaele Porter</h1>
                     <h1>terrspace</h1>
                     <h1>Connor Weddle</h1>
-                    <h1>John Whatley</h1>
+                    <div onmouseover="contributorBioShow('whatley')" onmouseout="contributorBioHide('whatley')">
+                        <h1>John Whatley</h1>
+                    </div>
                     <div onmouseover="contributorBioShow('wilkins')" onmouseout="contributorBioHide('wilkins')">
                         <h1>Zack Wilkins</h1>
                     </div>
