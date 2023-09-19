@@ -297,14 +297,24 @@ body {
 }
 
 .ashes-title {
+
+  width:50%;
+  padding:0px;
+  margin:0px;
+  overflow: visible;
+  height: 200vh;
+}
+.ashes-background {
+  
   background-image: url('../images/titles/korea_tarot_1.jpg');
+  height:100vh;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position:sticky;
+  top: 0; 
+  padding-top: 0;
 }
 
-/* #geo-title { */
-  /* background-image: url('../images/titles/geo_birth.jpeg'); */
-  /* background-position: center; */
-  /* background-size: cover; */
-/* } */
 
 .column-center {
   border: 5px solid;
@@ -367,6 +377,11 @@ body {
   text-indent: 0px;
 }
 
+.translation {
+  height: 95vh;
+  scroll-snap-align: start;
+  
+}
 
 
 .prose {
