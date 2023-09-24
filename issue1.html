@@ -54,7 +54,53 @@
             <img src="images/nightswim.jpg">
         </div>
 
-        <div class="swiper fDSwiper" id="lFE" >
+        <div class="swiper pSwiper" id="lFE" >
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="pro-section">
+                        <div class="column">
+                            <p> The text for section 1 goes here</p>
+                        </div>  
+                    </div>
+                    <div class="pro-section">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+                            <p> The text for section 2 goes here</p>
+                        </div>
+                    </div>
+                    <div class="pro-section">
+                        <div class="column">
+                            <p> The text for section 3 goes here</p>
+                        </div>
+                    </div>
+                    <div class="pro-section">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+                            <p> The text for section 2 goes here</p>
+                        </div>
+                    </div>
+                    <div class="pro-section">
+                        <div class="column">
+                            <p> The text for section 1 goes here</p>
+                        </div> 
+                    </div>
+                    <div class="pro-section">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+                            <p> The text for section 2 goes here</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
 
         </div>
         
@@ -207,7 +253,7 @@
                     <div class="column  title">
                         <h1>Leap of Shame</h1>
                         <h2>Kevin Berstler</h2>
-                        <!-- <img class="title-image" src="images/titles/lemons.png"></img> -->
+                        <img src="images/titles/leap_of_shame.jpg" style="width:80%; padding-top:20px;"></img>
     
                     </div>
                     <div class="column prose-poetry">
@@ -553,7 +599,8 @@
                     <div class="column title" >
                         <h1>Geotraumatic Birth</h1>
                         <h2>Jonathan Marquez</h2>
-                        <img src="images/titles/geo_birth.jpeg" style="width: 60%; margin-top: 5vh;"></img>
+                        <img class="geo" id="geo1" onclick="elementShow('geo2'); elementHide('geo1')" src="images/titles/geo_birth.jpeg"></img>
+                        <img class="geo" id="geo2" onclick="elementShow('geo1'); elementHide('geo2')" src="images/titles/geo_birth2.jpeg" style="display:none;"></img>
                     </div>
                     <div class="column prose-poetry">
                         <p>Halcyon rustling brings once closed eyes to wide birthing, as a charging sun floods into accepting retina. Foliage crowns my vision, green tones in opaque blades held high as if atavistic knights raise forth weapons in deistic worship. Wings on high as valkyrian shapes bombard softly, powerful feminine surges of steelcapped breasts. Flaming with ecstatic blood lust they swaddle me in magmic flows. Lovingly, I incinerate, as megalithic platform heels crush me. </p>
@@ -830,6 +877,7 @@
                 <div class="column title">
                     <h1>A Friend in China</h1>
                     <h2>Lincoln Carr</h2>
+                    <img src="images/titles/friend_in_china.jpg">
                 </div>
                 <div class="column poetry">
                     <p>Wearing the wings of cicadas, </p>
@@ -902,6 +950,9 @@
                     <h2>Kyle Markowski</h2>
                 </div>
                 <div class="column prose-poetry">
+                    <p><i>God is a circle whose center is everywhere and circumference nowhere.</i></p>
+                    <p>&emsp;-Voltaire</p>
+                    <br><br>
                     <p>I never felt as though muted colors were enough for adults, nor green enough for children</p>
                     <p>...</p>
                     <p>Kids: tykes: the time to understand each moment is a leaf: god hangs each one on branches&#39; terminus</p>
@@ -914,13 +965,14 @@
                     <p>...</p>
                     <p><br></p>
                     <p>...</p>
-                    <p>A leaf falling: one face for earth: the truth: one face for sky</p>
+                    <p>A leaf unfastened: one face for earth: the truth: one face for sky</p>
                     <p>...</p>
                     <p>Work crystallizes Time just as the ocean eats at its smooth edges, smoother every day: River deltas ultimately form a fan: a furn: a leaf</p>
                     <p>...</p>
-                    <p>Fallen: there it will lie</p>
+                    <p>One face lies: soil blind: fading further</p>
                     <p>...</p>
                     <p>I always felt as though the ocean should be leaves decaying: piles and piles and only god to rake them</p>
+                    <br><br>
                 </div>
             </div>
             
@@ -958,7 +1010,7 @@
                         <h2>Kyle Markowski</h2>
                     </div>
 
-                    <div class="column visual visual-portrait" id="flux-lunaris">
+                    <div class="column visual visual-portrait">
                         <video controls>
                             <source src="images/Flux Lunaris.mp4" type="video/mp4">
                         </video>
@@ -971,7 +1023,8 @@
                         <h1>Heavy Clouds</h1>
                         <h2>Diego Blanco</h2>
                     </div>
-                    <div class="column visual visual-portrait" style="scroll-snap-type: y mandatory; overflow-y: scroll;">
+                    <!--  -->
+                    <div class="column visual heavy-clouds" id="">
                         <img src="images/heavy_cloud_1.jpeg" style="float:right;"/>
                         <img src="images/heavy_cloud_2.jpeg" style="float:right;"/>
                         <img src="images/heavy_cloud_3.jpeg" style="float:right;"/>
@@ -1103,7 +1156,7 @@
                 </div>
                 <div class="swiper-slide">
                     
-                    <div class="column visual visual-landscape">
+                    <div class="column visual visual-portrait">
                         <img src="images/my_body.jpg" />
                     </div>
                     <div class="column title">
@@ -1193,7 +1246,11 @@
                         <div class="contributor-hover" id="gay" >
                             <img src="images/contributor-tiles/1.jpg">
                         </div>
+                        
                         <div class="contributor-hover" id="duong" >
+                            <img src="images/contributor-tiles/duong.jpg">
+                        </div>
+                        <div class="contributor-hover" id="porter" >
                             <img src="images/contributor-tiles/7.jpeg">
                         </div>
                         <div class="contributor-hover" id="wilkins" >
@@ -1214,6 +1271,18 @@
                         <div class="contributor-hover" id="whatley" >
                             <img src="images/contributor-tiles/whatley.jpg">
                         </div>
+                        <div class="contributor-hover" id="blanco" >
+                            <img src="images/contributor-tiles/blanco.jpg">
+                        </div>
+                        <div class="contributor-hover" id="marquez" >
+                            <img src="images/contributor-tiles/marquez.jpg">
+                        </div>
+                        <div class="contributor-hover" id="terrspace" >
+                            <img src="images/contributor-tiles/terrspace.jpg">
+                        </div>
+                        <div class="contributor-hover" id="weddle" >
+                            <img src="images/contributor-tiles/weddle.jpg">
+                        </div>
                     </div>
                     
                     
@@ -1222,53 +1291,63 @@
                 <div class="column contributor-list">
                     <h1>Mohammed Mudhafar Abduljabbar</h1>
                     <h1>Sabaa Ashakargi</h1>
-                    <div onmouseover="contributorBioShow('berstler')" onmouseout="contributorBioHide('berstler')">
+                    <div onmouseover="elementShow('berstler')" onmouseout="elementHide('berstler')">
                         <h1>Kevin Berstler</h1>
                     </div>
-                    <h1>Diego Blanco</h1>
-                    <div onmouseover="contributorBioShow('carr')" onmouseout="contributorBioHide('carr')">
+                    <div onmouseover="elementShow('blanco')" onmouseout="elementHide('blanco')">
+                        <h1>Diego Blanco</h1>
+                    </div>
+                    <div onmouseover="elementShow('carr')" onmouseout="elementHide('carr')">
                         <h1>Lincoln Carr</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('chen')" onmouseout="contributorBioHide('chen')">
+                    <div onmouseover="elementShow('chen')" onmouseout="elementHide('chen')">
                         <h1>S.Y. Chen</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('cranor')" onmouseout="contributorBioHide('cranor')">
+                    <div onmouseover="elementShow('cranor')" onmouseout="elementHide('cranor')">
                         <h1>Shane Cranor</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('dickinson')" onmouseout="contributorBioHide('dickinson')">
+                    <div onmouseover="elementShow('dickinson')" onmouseout="elementHide('dickinson')">
                         <h1>Wenli Dickinson</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('duong')" onmouseout="contributorBioHide('duong')">
+                    <div onmouseover="elementShow('duong')" onmouseout="elementHide('duong')">
                         <a href="https://www.instagram.com/vy_ti_duong/">
                             <h1>Vy Duong</h1>
                         </a>
                     </div>
-                    <div onmouseover="contributorBioShow('gay')" onmouseout="contributorBioHide('gay')">
+                    <div onmouseover="elementShow('gay')" onmouseout="elementHide('gay')">
                         <h1>Lisa Gay</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('kohnke')" onmouseout="contributorBioHide('kohnke')">
+                    <div onmouseover="elementShow('kohnke')" onmouseout="elementHide('kohnke')">
                         <h1>Colton Kohnke</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('leto')" onmouseout="contributorBioHide('leto')">
+                    <div onmouseover="elementShow('leto')" onmouseout="elementHide('leto')">
                         <a href="https://www.instagram.com/alex_leto_art/">
                             <h1>Alex Leto</h1>
                         </a>
                     </div>
-                    <div onmouseover="contributorBioShow('lucy')" onmouseout="contributorBioHide('lucy')">
+                    <div onmouseover="elementShow('lucy')" onmouseout="elementHide('lucy')">
                         <a href="https://www.instagram.com/ryanishka/"><h1>Ryan Lucy</h1></a>
                     </div>
                     <h1>Kyle Markowski</h1>
-                    <h1>Jonathan Marquez</h1>
-                    <div onmouseover="contributorBioShow('njo')" onmouseout="contributorBioHide('njo')">
+                    <div onmouseover="elementShow('marquez')" onmouseout="elementHide('marquez')">
+                        <h1>Jonathan Marquez</h1>
+                    </div>
+                    <div onmouseover="elementShow('njo')" onmouseout="elementHide('njo')">
                         <h1>Jade Njo</h1>
                     </div>
-                    <h1>Mikaele Porter</h1>
-                    <h1>terrspace</h1>
-                    <h1>Connor Weddle</h1>
-                    <div onmouseover="contributorBioShow('whatley')" onmouseout="contributorBioHide('whatley')">
+                    <div onmouseover="elementShow('porter')" onmouseout="elementHide('porter')">
+                        <h1>Mikaele Porter</h1>
+                    </div>
+                    <div onmouseover="elementShow('terrspace')" onmouseout="elementHide('terrspace')">
+                        <h1>terrspace</h1>
+                    </div>
+                    <div onmouseover="elementShow('weddle')" onmouseout="elementHide('weddle')">
+                        <h1>Connor Weddle</h1>
+                    </div>
+                    <div onmouseover="elementShow('whatley')" onmouseout="elementHide('whatley')">
                         <h1>John Whatley</h1>
                     </div>
-                    <div onmouseover="contributorBioShow('wilkins')" onmouseout="contributorBioHide('wilkins')">
+                    <div onmouseover="elementShow('wilkins')" onmouseout="elementHide('wilkins')">
                         <h1>Zack Wilkins</h1>
                     </div>
                     <br><br>
@@ -1331,7 +1410,7 @@
     
 
     let sectionIDs = ["lFE", "fD", "eT", "tR", "p", "rA", "mA", "c"];
-    let sectionColors = [ "black", "#8C0303", "#D95204", "#F2A7CA", "#4A4EBC", "#010100", "#B8E2F2", "#FBEC5D"];
+    let sectionColors = [ "#000000", "#8C0303", "#D95204", "#F2A7CA", "#4A4EBC", "#010100", "#B8E2F2", "#FBEC5D"];
     let sections = [];
     for (id of sectionIDs) {
         sections.push(document.getElementById(id)); 
@@ -1397,13 +1476,13 @@
         document.querySelector('.popup-image').style.display = 'none';
     };
 
-    function contributorBioShow(name) {
+    function elementShow(name) {
 
         document.getElementById(name).style.display = 'inherit';
 
     }
 
-    function contributorBioHide(name) {
+    function elementHide(name) {
 
         document.getElementById(name).style.display = 'none';
 

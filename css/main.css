@@ -15,10 +15,10 @@ body {
 }
 
 body {
-    background-color: #8C0303; 
+    background-color: #000000; 
     font-family: "Monument Extended";
     font-size: 14px; 
-    color: #8C0303; 
+    color: #000000; 
     margin: 0; 
     padding: 0; 
 
@@ -321,11 +321,18 @@ body {
     
 }
 
-.visual-portrait img {
+.visual-portrait img{
     scroll-snap-align: start;   
     width: 100%;
     height: auto;
+    cursor:pointer;
 
+}
+
+.visual-portrait video {
+  width: 100%;
+  height: 60vh;
+  border: white solid 1px;
 }
 
 .visual-landscape {
@@ -339,6 +346,7 @@ body {
 .visual-landscape img {
   
   width: 100%;
+  cursor:pointer;
 
 }
 
@@ -404,11 +412,28 @@ body {
     font-style: normal;
 }
 
+.pSwiper > .swiper-wrapper > .swiper-slide {
+  background-color: black;
+  display:block;
+}
+.pSwiper > .swiper-wrapper > .swiper-slide p {
+  color: white;
+}
+
+.pro-section {
+  height:70vh;
+  width:90vw;
+  /* border: red solid 1px;  */
+  background-image: url("../images/titles/helix.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 70vh;
+
+  
+}
 
 .mASwiper > .swiper-wrapper > .swiper-slide {
   background-color: black;
-    
-  
 }
 
 .mASwiper > .swiper-wrapper > .swiper-slide p {
@@ -493,6 +518,18 @@ ion-icon {
 }
 
 
+.heavy-clouds {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  padding: 0px;
+  width: fit-content;
+}
+
+.heavy-clouds img {
+  scroll-snap-align: start;   
+  width: 100%;
+  height: auto;
+}
 
 
 .popup-image {
@@ -517,6 +554,7 @@ ion-icon {
 }
 
 .popup-image img{
+  
   position: absolute; 
   top: 50%; left: 50%; 
   transform: translate(-50%, -50%); 
@@ -557,14 +595,13 @@ ion-icon {
   width:10vw;
 }
 
-.visual-portrait video {
-  width: 100%;
-  height: 60vh;
+.geo {
+  width:60%;
+  margin-top:5vh;
+  cursor: pointer;
 }
 
   
-
-
 
 @media (min-width: 900px) {
 
