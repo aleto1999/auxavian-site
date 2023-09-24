@@ -54,11 +54,7 @@
             </div> 
         </div>
 
-        <div class="popup-image popup-image-landscape">
-            <span>&times;</span> 
-            <img src="images/nightswim.jpg">
-        </div>
-        <div class="popup-image popup-image-portrait">
+        <div class="popup-image">
             <span>&times;</span> 
             <img src="images/nightswim.jpg">
         </div>
@@ -1396,23 +1392,23 @@
 
     // initialize swiper to fever dream section
     let swiper = new Swiper(".fDSwiper", {
-        simulateTouch: false, 
-        navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
-        }, pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        }, keyboard: {
-            enabled: true,
-        },
-        breakpoints: {
-            900:{
-                simulateTouch: false
+        simulateTouch: true, 
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            }, pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            }, keyboard: {
+                enabled: true,
+            },
+            breakpoints: {
+                900:{
+                    simulateTouch: false
 
-            }
-        },
+                }
+            }, 
       
     });
 
@@ -1437,9 +1433,10 @@
 
         // swiper.destroy( true, true ); // delete previous instances of swiper obj
 
-        let newSwiperName = "." + sectionIDs[n] + "Swiper"; 
-            swiper = new Swiper(newSwiperName, {
-                simulateTouch: false, 
+        let newSwiperName = "." + sectionIDs[n] + "Swiper";
+        
+        swiper = new Swiper(".fDSwiper", {
+            simulateTouch: true, 
                 navigation: {
                     nextEl: ".button-next",
                     prevEl: ".button-prev",
@@ -1455,8 +1452,8 @@
                         simulateTouch: false
 
                     }
-                },
-            
+                }, 
+      
         });
 
         // set only current section to visible
@@ -1482,27 +1479,16 @@
     }
 
 
-    document.querySelectorAll(".visual-landscape img").forEach(image =>{
+    document.querySelectorAll(".visual img").forEach(image =>{
         image.onclick = () => {
-            document.querySelector('.popup-image-landscape').style.display = 'block';
-            document.querySelector('.popup-image-landscape img').src = image.getAttribute('src');
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
         }
 
     });
 
-    document.querySelector(".popup-image-landscape span").onclick = () => {
-        document.querySelector('.popup-image-landscape').style.display = 'none';
-    };
-
-    document.querySelectorAll(".visual-portrait img").forEach(image =>{
-        image.onclick = () => {
-            document.querySelector('.popup-image-portrait').style.display = 'block';
-            document.querySelector('.popup-image-portrait img').src = image.getAttribute('src');
-        }
-
-    });
-    document.querySelector(".popup-image-portrait span").onclick = () => {
-        document.querySelector('.popup-image-portrait').style.display = 'none';
+    document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
     };
 
     function elementShow(name) {

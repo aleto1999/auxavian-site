@@ -545,6 +545,7 @@ ion-icon {
 
 
 .popup-image {
+
   position: fixed; 
   top: 0; 
   left: 0; 
@@ -565,13 +566,27 @@ ion-icon {
 
 }
 
-.popup-image img{
+.popup-image-landscape img{
   
   position: absolute; 
   top: 50%; left: 50%; 
   transform: translate(-50%, -50%); 
   width: 95%; 
   object-fit: cover;
+  /* max-width: 85vw;
+  max-height:85vh; */
+  
+}
+
+.popup-image-portrait img{
+  
+  position: absolute; 
+  top: 50%; left: 50%; 
+  transform: translate(-50%, -50%); 
+  height: 95%; 
+  object-fit: cover;
+  /* max-width: 85vw;
+  max-height:85vh; */
   
 }
 
@@ -714,7 +729,7 @@ ion-icon {
 
   }
   
-  .popup-image img{
+  .popup-image-landscape img{
     width: 900px; 
   }
 
