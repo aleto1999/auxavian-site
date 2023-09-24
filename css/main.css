@@ -573,8 +573,8 @@ ion-icon {
   transform: translate(-50%, -50%); 
   width: 95%; 
   object-fit: cover;
-  /* max-width: 85vw;
-  max-height:85vh; */
+  max-width: 85vw;
+  max-height:85vh;
   
 }
 
@@ -585,8 +585,8 @@ ion-icon {
   transform: translate(-50%, -50%); 
   height: 95%; 
   object-fit: cover;
-  /* max-width: 85vw;
-  max-height:85vh; */
+  max-width: 85vw;
+  max-height:85vh;
   
 }
 
