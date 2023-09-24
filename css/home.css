@@ -103,11 +103,23 @@ a {
 
 #contact {
   height:100vh; 
-}
-
-#contact h2 {
+  display: flex;
+  color: inherit;
+  flex-wrap: wrap;
   padding:10vw;
 }
+
+.contact-text {
+  width: 100%; 
+  padding-right: 10vw;
+}
+
+.logo img {
+  width: 84%;
+  padding-left:8%;
+  padding-right:8%;
+}
+
 
 
 @media (min-width: 900px) {
@@ -129,6 +141,23 @@ a {
 
   .staff {
     background-image: url("../images/auxavian_staff_lawnmower.jpg");
+  }
+
+  #contact {
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+
+  .contact-text {
+    width: 70%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .log img {
+
   }
 
 }

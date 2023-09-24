@@ -415,6 +415,7 @@ body {
 .proSwiper > .swiper-wrapper > .swiper-slide {
   background-color: black;
   display:block;
+  overflow-x:hidden;
 }
 .proSwiper > .swiper-wrapper > .swiper-slide p {
   color: white;
@@ -484,9 +485,11 @@ ion-icon {
 .swiper-pagination{
   z-index: 1;
   width: 10%;
+  height:fit-content;
   text-align: center;
   float: left;
-  top: 1.5%;
+  top: 0;
+  padding-top:10px;
 
   
 }
@@ -500,6 +503,15 @@ ion-icon {
 }
 .swiper-pagination-bullet-active {
   background-color: white;
+}
+
+.temp {
+  z-index:999;
+  width:20%;
+  height:20%;
+  top:1.5%;
+  left:30%;
+  background-color: red;
 }
 
 .luna {
@@ -607,6 +619,7 @@ ion-icon {
 
   .swiper-pagination{
     top:auto;
+    padding-top:10px;
   }
 
   .column {

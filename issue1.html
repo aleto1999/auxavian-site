@@ -18,18 +18,22 @@
         <div class="nav-side nav">
             <div class="nav-items">
 				<input type="checkbox" id="myInput">
-				<label for="myInput">
-                    <div class="icon">
-                        <span class="menu-bar top"></span>
-					    <span class="menu-bar middle"></span>
-					    <span class="menu-bar bottom"></span>
-                    </div>
-					
-				</label>
+                    <label for="myInput">
+                        <div class="icon">
+                            <span class="menu-bar top"></span>
+                            <span class="menu-bar middle"></span>
+                            <span class="menu-bar bottom"></span>
+                        </div>
+                        
+                    </label>
+                </input>
+                
 				<aside>
 					<div class="menu-slider">
+                        <!-- <div class="temp mobile">
+                            <div class="swiper-pagination"></div>
+                        </div> -->
 						<div class="menu-content vertical-center">
-                        
 							<label for="myInput">
                                 <li class="contributor" onclick="ChangeSection(0);"><h1>Prologue</h1></li>
                                 <li class="section-title red" onclick="ChangeSection(1);"><h1>Fever Dream</h1></li>
@@ -46,7 +50,8 @@
 				</aside>
 			</div>
             <div class="nav-items left-rot">
-                <a id="site-title">auxavian</a></div> 
+                <a id="site-title">auxavian</a>
+            </div> 
         </div>
 
         <div class="popup-image">
@@ -1362,22 +1367,22 @@
         <div class="nav-side nav desktop">
             <div style="height:90%"></div>
 
-            <div class="nav-button button-next">
+            <div class="nav-button button-next" id="button-next" style="display:none;">
                 <ion-icon class="icon" name="arrow-forward-sharp"></ion-icon>
             </div>
 
-            <div class="nav-button button-prev">
+            <div class="nav-button button-prev" id = "button-prev" style="display:none;">
                 <ion-icon class="icon" name="arrow-back-sharp"></ion-icon>
             </div>
  
 
         </div>
     
-        <div class="nav-bottom nav desktop">
-            <div class="swiper-pagination desktop"></div>
+        <div class="nav-bottom nav">
+            <div class="swiper-pagination"></div>
             
-    
         </div> 
+
 
     </div>
 
@@ -1397,13 +1402,7 @@
                 clickable: true,
             }, keyboard: {
                 enabled: true,
-            },
-            breakpoints: {
-                900:{
-                    simulateTouch: false
-
-                }
-            }, 
+            }
       
     });
 
@@ -1417,6 +1416,9 @@
     }
 
     let backgroundDiv = document.getElementById("background"); 
+
+    let lArrow = document.getElementById("button-next");
+    let rArrow = document.getElementById("button-prev");
 
     function ChangeSection(n){
 
@@ -1438,12 +1440,6 @@
                 clickable: true,
             }, keyboard: {
                 enabled: true,
-            },
-            breakpoints: {
-                900:{
-                    simulateTouch: false
-
-                }
             }
             
         });
@@ -1457,7 +1453,14 @@
                 sections[i].style.display = "none";
             }
             
-        } 
+        }
+        if (n > 0 && n < 7) {
+            lArrow.style.display = 'inherit';
+            rArrow.style.display = 'inherit';
+        } else {
+            lArrow.style.display = 'none';
+            rArrow.style.display = 'none';
+        }
              
 
 
