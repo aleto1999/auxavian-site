@@ -412,11 +412,11 @@ body {
     font-style: normal;
 }
 
-.pSwiper > .swiper-wrapper > .swiper-slide {
+.proSwiper > .swiper-wrapper > .swiper-slide {
   background-color: black;
   display:block;
 }
-.pSwiper > .swiper-wrapper > .swiper-slide p {
+.proSwiper > .swiper-wrapper > .swiper-slide p {
   color: white;
 }
 
