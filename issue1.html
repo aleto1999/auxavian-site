@@ -262,7 +262,8 @@
                     <div class="column  title">
                         <h1>Leap of Shame</h1>
                         <h2>Kevin Berstler</h2>
-                        <img src="images/titles/leap_of_shame.jpg" style="width:80%; padding-top:20px;"></img>
+                        <img class="shame" id="shame1" onclick="elementShow('shame2'); elementHide('shame1')" src="images/titles/leap_of_shame.jpg" style="width:80%; padding-top:20px;"></img>
+                        <img class="shame" id="shame2" onclick="elementShow('shame1'); elementHide('shame2')" src="images/titles/leap_of_shame2.jpeg" style="width:80%; padding-top:20px; display:none;"></img>
     
                     </div>
                     <div class="column prose-poetry">
@@ -312,10 +313,12 @@
 
                 <div class="swiper-slide">
                     <div class="column title">
-                        <h1>(Un)rooted</h1>
+                        <h1>Unrooted</h1>
                         <h2>Alex Leto</h2>
+                        <img src="images/titles/unrooted.jpg" style="width:70%; padding-top:10vh;">
                     </div>
                     <div class="column poetry">
+                        <br>
                         <p>I never thought I&#39;d like weeding</p>
                         <p>that moment of completeness </p>
                         <p>feeling root slip from so</p>
@@ -328,7 +331,7 @@
 
                 <div class="swiper-slide" >
                     <div class="column visual visual-landscape">
-                        <img src="images/isla_de_san_andres_1.jpg" />
+                        <img src="images/isla_de_san_andres.jpg">
                     </div>
                     <div class="column title">
                         <h1>Isla de San Andres, Colombia Caribena</h1>
@@ -644,7 +647,7 @@
                 <div class="swiper-slide">
                     
                     <div class="column visual visual-landscape">
-                        <img src="images/isla_de_san_andreas_2.jpeg" />
+                        <img src="images/isla_de_san_andres2.jpg" />
                     </div>
                     <div class="column title">
                         <h1>Isla de San Andres, Colombia Caribe&ntilde;a</h1>
@@ -793,7 +796,10 @@
                 <div class="swiper-slide">
                     <div class="column title">
                         <div style="text-align: right;">
-                            <h1>Untitled Poem</h1>
+                            <div class="arabic">
+                                <h1>المعلقات</h1>
+                            </div>
+                            
                             <h2>Mohammed Mudhafar Abduljabbar<br>with translation from Sabaa Ashakargi</h2>
                         </div>
                         
@@ -812,19 +818,17 @@
                             <p>كَذْا كَانَ إِنْتِظارُ أحْضَانِكَ النُوَبُ</p>
                             <br>
                             <p>دَامَتْ تِلْكَ العُيونُ مُنْيرَةً لِدُرُوبْي</p>
-                            <p>كَمَا دَامَ عِرْاقٌ للعَرَبّي مَنَارُهُ</p>
+                            <p>كَمَا دَامَ عِرْاقٌ للعَرَبّ مَنَارُهُ</p>
                             <br>
                             <p>لَكِنْ هَلْ لَنْا انْ نَحْصُلَ على مِفْتَاحِنْا</p>
                             <p>وَفَرَجٌ، بَعْدَ صَبْرٍ شَقَّ لَهُ في حُبِنا فَرَقُ</p>
                             <br>
                         </div>
                     </div>
-                    <div class="column poetry" style="padding-top:0px; scroll-snap-type: y mandatory; overflow:scroll;">
+                    <div class="column poetry translation-container" >
                         <div class="translation">
                             <br><br><br><br>
-                            <br>
-                            <br>
-                            <br>
+                            <h1 style="text-indent: -10px;">Mu&#39;allaqat</h1>
                             <br>
                             <p><i>Mohammed's Version</i></p>
                             <br>
@@ -849,6 +853,7 @@
                             
                         </div>
                         <div class="translation">
+                            <br><br><br><br>
                             <br><br><br><br>
                             <p><i>Sabaa's Version</i></p>
                             <br>
@@ -1236,6 +1241,12 @@
             <div class="swiper-slide">
                 <div class="column desktop">
                     <div class="column-center">
+                        <div class="contributor-hover" id="mohammed" >
+                            <img src="images/contributor-tiles/mohammed.jpg">
+                        </div>
+                        <div class="contributor-hover" id="sabaa" >
+                            <img src="images/contributor-tiles/sabaa.jpg">
+                        </div>
                         <div class="contributor-hover" id="berstler" >
                             <img src="images/contributor-tiles/14.jpg">
                         </div>
@@ -1291,14 +1302,21 @@
                         <div class="contributor-hover" id="weddle" >
                             <img src="images/contributor-tiles/weddle.jpg">
                         </div>
+                        <div class="contributor-hover" id="markow" >
+                            <img src="images/contributor-tiles/markowski.jpeg">
+                        </div>
                     </div>
                     
                     
 
                 </div>
                 <div class="column contributor-list">
-                    <h1>Mohammed Mudhafar Abduljabbar</h1>
-                    <h1>Sabaa Ashakargi</h1>
+                    <div onmouseover="elementShow('mohammed')" onmouseout="elementHide('mohammed')">
+                        <h1>Mohammed Mudhafar Abduljabbar</h1>
+                    </div>
+                    <div onmouseover="elementShow('sabaa')" onmouseout="elementHide('sabaa')">
+                        <h1>Sabaa Ashakargi</h1>
+                    </div>
                     <div onmouseover="elementShow('berstler')" onmouseout="elementHide('berstler')">
                         <h1>Kevin Berstler</h1>
                     </div>
@@ -1336,7 +1354,9 @@
                     <div onmouseover="elementShow('lucy')" onmouseout="elementHide('lucy')">
                         <a href="https://www.instagram.com/ryanishka/"><h1>Ryan Lucy</h1></a>
                     </div>
-                    <h1>Kyle Markowski</h1>
+                    <div onmouseover="elementShow('markow')" onmouseout="elementHide('markow')">
+                        <h1>Kyle Markowski</h1>
+                    </div>
                     <div onmouseover="elementShow('marquez')" onmouseout="elementHide('marquez')">
                         <h1>Jonathan Marquez</h1>
                     </div>
