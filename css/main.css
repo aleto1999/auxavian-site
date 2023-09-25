@@ -571,10 +571,8 @@ ion-icon {
   position: absolute; 
   top: 50%; left: 50%; 
   transform: translate(-50%, -50%); 
-  width: 95%; 
-  object-fit: cover;
-  max-width: 85vw;
-  max-height:85vh;
+  width: 90vw; 
+
   
 }
 
@@ -583,10 +581,8 @@ ion-icon {
   position: absolute; 
   top: 50%; left: 50%; 
   transform: translate(-50%, -50%); 
-  height: 95%; 
-  object-fit: cover;
-  max-width: 85vw;
-  max-height:85vh;
+  height: 60vh; 
+
   
 }
 
@@ -727,6 +723,9 @@ ion-icon {
     height: 100%;
     width: auto;
 
+  }
+  .popup-image-portrait img{
+    height:90vh;
   }
   
   .popup-image-landscape img{
