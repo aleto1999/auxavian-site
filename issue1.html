@@ -183,18 +183,10 @@
                     </div> 
                 </div>
     
-                <div class="swiper-slide" style="position: relative;">
-                    <div class="column" style="height:100%;">
-                        <div class="title" style="width: 100%; background-image: url('images/titles/korea_tarot_1.jpg');">
+                <div class="swiper-slide">
+                    <div class="column title" style="background-image: url('images/titles/korea_tarot_1.jpg');"> 
                             <h1 style="color: white; text-shadow: 1px 1px 1px grey;">Thoughts of Ash and Time</h1>
-                            <h2 style="color: white; text-shadow: 1px 1px 1px grey;">S. Y. Chen</h2>
-                        </div>
-
-                        <img src="">
-
-
-                        
-                        
+                            <h2 style="color: white; text-shadow: 1px 1px 1px grey;">S. Y. Chen</h2>  
                     </div>
                     <div class="column prose">
                         <p><br>&#8195Spits of ash drift past the smoker&#39;s eyelashes, and out over the water, hazing the neon lights of a love hotel&#46; The smoker stubs out his cigarette, though its last regards don&#39;t leave him until a few steps later, as he exhales like a dragon&#46;
@@ -827,8 +819,10 @@
                     </div>
                     <div class="column poetry translation-container" >
                         <div class="translation">
-                            <br><br><br><br>
-                            <h1 style="text-indent: -10px;">Mu&#39;allaqat</h1>
+                            <div class="desktop">
+                                <br><br><br><br>
+                            </div> 
+                            <h1>Mu&#39;allaqat</h1>
                             <br>
                             <p><i>Mohammed's Version</i></p>
                             <br>
@@ -853,8 +847,10 @@
                             
                         </div>
                         <div class="translation">
-                            <br><br><br><br>
-                            <br><br><br><br>
+                            <div class="desktop">
+                                <br><br><br><br>
+                                <br><br><br><br>
+                            </div>
                             <p><i>Sabaa's Version</i></p>
                             <br>
                             <p>Was destiny delighted by its pains</p>
@@ -1402,7 +1398,7 @@
         </div>
     
         <div class="nav-bottom nav">
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" id="swiper-pagination" style="display:none;"></div>
             
         </div> 
 
@@ -1448,6 +1444,7 @@
 
     let lArrow = document.getElementById("button-next");
     let rArrow = document.getElementById("button-prev");
+    let pag = document.getElementById("swiper-pagination");
 
     function ChangeSection(n){
 
@@ -1491,9 +1488,11 @@
         if (n > 0 && n < 7) {
             lArrow.style.display = 'inherit';
             rArrow.style.display = 'inherit';
+            pag.style.display = 'block';
         } else {
             lArrow.style.display = 'none';
             rArrow.style.display = 'none';
+            pag.style.display = 'none';
         }
              
 
